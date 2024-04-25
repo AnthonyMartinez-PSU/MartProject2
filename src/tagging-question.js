@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tagging Question</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #ededed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      padding: 0 20px;
+      position: relative;
+    }
+    .image-box {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .image-box img {
+      max-width: 80%;
+      height: auto;
+    }
+    .question-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .answer-heading {
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    .answer-area,
+    .answer-pool {
+      width: 100%;
+      height: 100px;
+      border: 4px solid red;
+      margin-bottom: 10px;
+      text-align: left;
+      padding-left: 10px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      right: 0;
+      padding: 0 20px;
+    }
+    .button {
+      padding: 10px 30px;
+      background-color: #c0c0c0;
+      color: #000;
+      border: 2px solid red;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-box" id="imageBox">
+      <img src="HAX Image.png" alt="HAX Image">
+    </div>
+    <div class="question-text">
+      Which of the following big ideas would YOU associate with this artistic work?
+    </div>
+    <h4 class="answer-heading">Answer Area</h4>
+    <div class="answer-area" id="answerArea">
+    </div>
+    <h4 class="answer-heading">Answer Pool</h4>
+    <div class="answer-pool" id="answerPool">
+    </div>
+    <div class="button-container">
+      <button class="button" id="resetButton">Reset</button>
+      <button class="button" id="checkAnswerButton">Check Answer</button>
+    </div>
+  </div>
+
+
+  <script src="tagging-question.js"></script>
+</body>
+</html>
